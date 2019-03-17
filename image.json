@@ -21,8 +21,8 @@
                 "sudo yum install php-gd mariadb-server -y",
                 "sudo yum install mysql -y",
                 "sudo systemctl start httpd",
-                "sudo wget https://wordpress.org/wordpress-{{WORDPRESS_VERSION}}.zip",
-                "tar xzvf wordpress-{{WORDPRESS_VERSION}}.tar.gz",
+                "sudo wget https://wordpress.org/wordpress-${{WORDPRESS_VERSION}}.zip",
+                "tar xzvf wordpress-${{WORDPRESS_VERSION}}.tar.gz",
                 "sudo rsync -avP ~/wordpress/ /var/www/html/",
                 "sudo chown -R apache:apache /var/www/html/*"
 

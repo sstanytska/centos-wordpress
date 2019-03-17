@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("run packer"){
           steps{
-                sh "packer build -var-file=version image.json"
+                sh "packer build -var-file=version.json image.json"
           }
         }
     }

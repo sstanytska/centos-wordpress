@@ -1,4 +1,7 @@
 {
+    "variables": {
+        "WORDPRESS_VERSION": ""
+    },
     "builders": [
         {
             "type": "amazon-ebs",

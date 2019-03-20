@@ -2,11 +2,13 @@
 
 
 
-pipeline{
-    parameters{
-      string(defaultValue: '5.0.4', description: 'Please provide version of the wordpress.', name: 'wordpressVersion', trim: true)
-    }
+pipeline {
     agent any
+
+    parameters {
+      string( defaultValue: '5.0.4', description: 'Please provide version of the wordpress.', name: 'wordpressVersion', trim: true)
+    }
+
     stages {
         //
         stage('set version') {

@@ -1,1 +1,5 @@
-{"WORDPRESS_VERSION" : "5.0.4"}
+{ 
+    "variables" : {
+    "WORDPRESS_VERSION" : "5.0.4"
+    }
+}

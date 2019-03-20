@@ -11,7 +11,7 @@ pipeline {
 
     stages {
         //
-        stage('set version') {
+        stage("set version") {
           sh "export WORDPRESS_VERSION=${wordpressVersion}"
         }
         //

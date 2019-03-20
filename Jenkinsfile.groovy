@@ -1,8 +1,6 @@
 
-
-
-
 pipeline {
+
     agent any
 
     parameters {
@@ -10,11 +8,13 @@ pipeline {
     }
 
     stages {
-        //
+
         stage("set version") {
-          sh "export WORDPRESS_VERSION=${wordpressVersion}"
+          steps {
+            sh "export WORDPRESS_VERSION=${wordpressVersion}"
+          }
         }
-        //
+
         stage("run packer"){
           steps{
                 sh "packer build image.json"

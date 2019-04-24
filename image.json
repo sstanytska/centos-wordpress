@@ -7,15 +7,15 @@
       {
           "type": "amazon-ebs",
           "region": "us-east-1",
-          "source_ami": "ami-0de53d8956e8dcf80",
+          "source_ami": "ami-0de53d8956e8dcf80",   
           "instance_type": "t2.micro",
           "ssh_username": "ec2-user",
           "ami_name": "wordpress-{{`timestamp`}}"
       }
     ],
     "provisioners": [
-        {
-            "type": "shell",
+        {   
+            "type": "shell",     
             "inline": [
                 "sudo yum install httpd wget unzip -y",
                 "sudo yum install php php-mysql -y",
